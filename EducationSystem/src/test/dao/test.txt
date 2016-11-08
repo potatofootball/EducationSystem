@@ -1,0 +1,31 @@
+		CollegeDao.loadCollege();
+		ProfessionDao.loadProfession();
+		ClassDao.loadClass();
+		StudentDao.loadStudent();
+		CourseTypeDao.loadCourseType();
+		CreditDao.loadCredit();
+		CourseDao.loadCourse();
+		NotAllowCourseDao.loadNotAllowCourse();
+		TitleDao.loadTitle();
+		TeacherDao.loadTeacher();
+		PostDao.loadPost();
+		ServedDao.loadServed();
+		ClassTimeDao.loadClassTime();
+		ClassAreaDao.loadClassArea();
+		BuildingDao.loadBuilding();
+		ClassroomDao.loadClassroom();
+		SemesterDao.loadSemester();
+		TeachDao.loadTeach();
+		AdjustClassDao.loadAdjustClass();
+		PickCourseDao.loadPickCourse();
+		// 加载专业信息
+		
+		// 添加测试数据
+
+		// 测试添加专业
+
+		// 测试修改数据
+
+		// 测试删除专业
+
+		// 遍历输出专业对象

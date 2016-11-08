@@ -1,0 +1,125 @@
+@charset "utf-8";
+/* CSS Document */
+
+@charset "utf-8";
+/* div页面布局设置*/
+
+#top{
+	auto;
+	height：100px;
+	top:0px;}
+
+
+#main{
+	margin:0px auto;
+	top:16px;
+	padding-left:20px;
+	margin-right:100px;}
+.biankuang {
+	border: thick double #CDCDD1;
+}
+
+
+#bottom{}
+
+#top_menu{
+	padding-top:32px;
+	padding-bottom:26px;
+
+	}
+#top_info{
+	margin-top:10px;
+	margin-left:30px;}
+#center{
+	margin:20px;
+
+	}
+
+#top_menu ul{
+	list-style-type:none;}
+#top_menu li{
+	float:none;
+	font-weight:bold;
+	font-size:14px;
+	margin-right:20px;
+	margin-left:10px;
+	background-position:0 50%;
+	padding-left:16px;}
+
+.logo{
+	margin:0px auto;
+	padding-top:10px;}
+	
+.userinfo{
+	float:right;
+	margin-top:60px;
+	width:120px;
+	font-size:15px;
+	background-color:#CCF;
+	opacity:0.3;
+	filter: alpha(opacity=80);
+}
+	
+.span{
+	color:#333;
+	font-size:18px;
+	}
+.menuinfo{
+	color:#333;
+	font-size:16px;}
+	
+a:link {
+	color: #333;
+	text-decoration: none;
+}
+a:hover{
+	background-color:#999;
+	background-size:cover;}
+#main_table{
+	margin-left:30px;
+	margin-top:50px;
+	font-size:20px;
+	font-stretch:condensed;
+	opacity:0.8;
+	filter: alpha(opacity=80);
+	}
+#mian_button{
+	width:50px;
+	margin-left:200px;}	
+
+.main_select{
+	width:200px;
+	float:right;
+	margin-top:0px;}
+#form{
+	margin-top:10px;
+	margin-left:30px;
+	}
+#info_table{
+	margin-top:20px;
+	margin-left:100px;
+	}
+	
+ul li{
+	list-style:none;}
+
+#button{
+	margin-left:135px;
+	margin-top:5px;}
+
+a:link {
+	color: #333;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #333;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: bold;
+}

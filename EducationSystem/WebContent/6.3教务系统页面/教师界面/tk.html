@@ -1,0 +1,239 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>调课页面</title>
+<link href="css/css.css" rel="stylesheet" type="text/css" />
+<link href="css/div.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+#apDiv3 {
+	position: absolute;
+	width: 79px;
+	height: 94px;
+	z-index: 1;
+	left: 245px;
+	top: 110px;
+	filter: alpha(opacity=80);
+	opacity: 0.6;
+	background-color: #CFE39E;
+	visibility: hidden;
+}
+
+
+a:visited {
+	color: #333;
+}
+body {
+	background-repeat: repeat-x;
+}
+</style>
+<script type="text/javascript">
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+
+</script>
+</head>
+<body>
+<!--顶层设计，固定层-->
+<div id="top">
+  <div class="userinfo"><strong>陈思玲1302020004</strong> <a href="login.html">安全退出</a></div>
+  <div class="logo" align="center">
+    <p><img src="images/top_logo2.png" width="350" height="45" /></p>
+  </div>
+  <div id="top_menu" >
+    <table width="100%" border="0" cellspacing="1" cellpadding="0">
+      <tr>
+        <td width="62" height="18" align="center" bgcolor="#DCDCDC" class="span"><a href="index.html"><strong>首页</strong></a></td>
+        <td width="71" align="center" bgcolor="#DCDCDC" class="span"><a href="tk.html"><strong>调课</strong></a></td>
+        <td width="58" align="center" bgcolor="#DCDCDC" class="span"><strong>请假</strong></td>
+        <td width="70" align="center" bgcolor="#DCDCDC" class="span" onmouseover="MM_showHideLayers('top','','show','top_menu','','show','apDiv3','','show')" onfocus="MM_showHideLayers('top','','show','top_menu','','show','apDiv3','','show')"><strong>信息</strong></td>
+        <td width="93" align="center" bgcolor="#DCDCDC" class="span"><strong>选课情况</strong></td>
+        <td width="685" bgcolor="#DCDCDC">&nbsp;</td>
+        <td width="67" bgcolor="#DCDCDC">&nbsp;</td>
+      </tr>
+    </table>
+  </div>
+</div>
+<div id="main">
+  <p>&nbsp;</p>
+  <div id="main_table">
+  <table width="1068" border="0" cellspacing="1" cellpadding="0" >
+    <tr>
+      <td width="48" align="center">&nbsp;</td>
+      <td width="55" align="center">&nbsp;</td>
+      <td width="80" align="center">周一</td>
+      <td width="80" align="center">周二</td>
+      <td width="80" align="center">周三</td>
+      <td width="80" align="center">周四</td>
+      <td width="80" align="center">周五</td>
+      <td width="80" align="center">周六</td>
+      <td width="80" align="center">周日</td>
+    </tr>
+    <tr>
+      <td width="48" align="center">&nbsp;</td>
+      <td width="55" align="center">1</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="48" align="center">&nbsp;</td>
+      <td width="55" align="center">2</td>
+      <td width="80" align="center" bgcolor="#DCDCDC"><a href="ttk_sqb.html"><strong>信息管理</strong></a></td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="48" align="center">上午</td>
+      <td width="55" align="center">3</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC"><strong>系统设计</strong></td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="48" align="center">&nbsp;</td>
+      <td width="55" align="center">4</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="48" align="center">&nbsp;</td>
+      <td width="55" align="center">5</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC"><strong>数据分析</strong></td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="48" align="center">&nbsp;</td>
+      <td width="55" align="center">6</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="48" align="center">&nbsp;</td>
+      <td width="55" align="center">7</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="48" align="center">下午</td>
+      <td width="55" align="center">8</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="48" align="center">&nbsp;</td>
+      <td width="55" align="center">9</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC"><strong>项目管理</strong></td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="48" align="center">&nbsp;</td>
+      <td width="55" align="center">10</td>
+      <td width="80" align="center" bgcolor="#DCDCDC"><strong>软件测试</strong></td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="48" align="center">&nbsp;</td>
+      <td width="55" align="center">11</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+    </tr>
+    <tr>
+      <td align="center">&nbsp;</td>
+      <td align="center">12</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="48" align="center">&nbsp;</td>
+      <td width="55" align="center">13</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+      <td width="80" align="center" bgcolor="#DCDCDC">&nbsp;</td>
+    </tr>
+  </table></div>
+</div>
+<div class="menuinfo" id="apDiv3" onmouseover="MM_showHideLayers('top','','show','top_menu','','show','apDiv3','','show')" onmouseout="MM_showHideLayers('top','','show','top_menu','','show','apDiv3','','hide')" >
+  <table width="100%" border="0" cellspacing="1" cellpadding="0">
+    <tr>
+      <td height="30" align="center" bgcolor="#DCDCDC"><strong><a href="jsxxz.html">个人信息</a></strong></td>
+    </tr>
+    <tr>
+      <td height="30" align="center" bgcolor="#DCDCDC"><strong><a href="xsxxa.html">学生信息</a></strong></td>
+    </tr>
+    <tr>
+      <td height="30" align="center" bgcolor="#DCDCDC"><strong>班级信息</strong></td>
+    </tr>
+  </table>
+ 
+</div>
+</body>
+</html>
+
+</html>

@@ -1,0 +1,317 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>选课情况首页</title>
+<link href="css/jw_css.css" rel="stylesheet" type="text/css" />
+<link href="css/jw_div.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+#apDiv1 {
+	position: absolute;
+	width: 120px;
+	height: 80px;
+	z-index: 1;
+	left: 245px;
+	top: 108px;
+	background-color: #CCCCCC;
+	opacity: 0.6;
+	filter: alpha(opacity=80);
+	visibility: hidden;
+}
+body {
+	background-repeat: repeat-x;
+}
+</style>
+<script type="text/javascript">
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+</script>
+</head>
+<body>
+<div class="menuinfo" id="apDiv1" onmousemove="MM_showHideLayers('apDiv1','','show','top','','show','top_menu','','show','main','','show')" onmouseout="MM_showHideLayers('apDiv1','','hide','top','','show','top_menu','','show','main','','show')">
+  <table width="100%" border="0" cellspacing="1" cellpadding="0">
+  
+     <tr>
+      <th height="40" scope="row"><a href="kccjcx_x.html">课程成绩查询</a></th>
+    </tr>
+    <tr>
+      <th height="40" scope="row"><a href="xscjcx_x.html">学生成绩查询</a></th>
+    </tr>
+    
+   <tr>
+      <th height="40" bgcolor="#CCCCCC" scope="row"><a href="xsxx_z.html">学生信息</a></th>
+    </tr>
+     <tr>
+      <th height="40" bgcolor="#CCCCCC" scope="row"> <a href="jsxx_z.html">教师信息</a></th>
+    </tr>
+    
+  </table>
+</div>
+<!--顶层设计，固定层-->
+<div id="top">
+  <div class="userinfo"><strong>教务 </strong><a href="login.html">安全退出</a></div>
+  <div class="logo">
+    <p><img src="images/top_logo2.png" width="350" height="45" /></p>
+  </div>
+  <div id="top_menu" >
+    <table width="100%" border="0" cellspacing="1" cellpadding="0">
+      <tr>
+        <td width="98" height="18" align="center" bgcolor="#CCCCCC" class="span"><a href="index_jw.html"><strong>教务首页</strong></a></td>
+        <td width="104" align="center" bgcolor="#CCCCCC" class="span"><strong><a href="课程导入.html">课程导入</a></strong></td>
+        <td width="97" align="center" bgcolor="#CCCCCC" class="span" onmouseover="MM_showHideLayers('apDiv1','','show','top','','show','top_menu','','show','main','','show')" onmouseout="MM_showHideLayers('apDiv1','','hide','top','','show','top_menu','','show','main','','show')"><strong>成绩查询</strong></td>
+        <td width="121" align="center" bgcolor="#CCCCCC" class="span" onmouseover="MM_showHideLayers('top','','show','top_menu','','show','apDiv3','','show')" onfocus="MM_showHideLayers('top','','show','top_menu','','show','apDiv3','','show')"><strong><a href="tk_jw.html">调课信息</a></strong></td>
+        <td width="123" align="center" bgcolor="#CCCCCC"><a href="jwxkqk.html" class="span"><strong>选课情况</strong></a></td>
+        <td width="365" bgcolor="#CCCCCC">&nbsp;</td>
+        <td width="215" bgcolor="#CCCCCC">&nbsp;</td>
+      </tr>
+    </table>
+  </div>
+</div>
+<div id="main"></div>
+<p>&nbsp;</p>
+</div>
+      <p>当前位置----选课情况</p>
+      <table width="62%" height="110" border="1" class="边框color">
+        <caption>
+          查询
+        </caption>
+        <tr>
+          <th height="104" align="left" valign="top" class="biankuang" scope="col"><p>学院
+              <label for="textfield"></label>
+          <input name="textfield" type="text" class="biankuang" id="textfield" />
+          专业
+          <label for="textfield2"></label>
+          <input name="textfield2" type="text" class="biankuang" id="textfield2" />
+          年级
+          <label for="textfield3"></label>
+          <input name="textfield3" type="text" class="biankuang" id="textfield3" />
+          </p>
+            <p>&nbsp;</p>
+            <p>
+              <label for="textfield4"></label>课程性质
+              <label for="textfield4"></label>
+              <input name="textfield4" type="text" class="biankuang" id="textfield4" value="" />
+            </p>
+            <table width="100%" border="0" align="left">
+              <tr>
+                <td align="center"><input name="button" type="submit" class="biankuang" id="button" value="提交" /></td>
+              </tr>
+            </table></th>
+        </tr>
+      </table>
+<p>课程总计      </p>
+      <table width="100%" border="0">
+        <tr>
+          <th width="11%" bgcolor="#DCDCDC" scope="col">课程代码</th>
+          <th width="22%" bgcolor="#DCDCDC" scope="col">课程名称</th>
+          <th width="13%" bgcolor="#DCDCDC" scope="col">课程性质</th>
+          <th width="11%" bgcolor="#DCDCDC" scope="col">学分</th>
+          <th width="12%" bgcolor="#DCDCDC" scope="col">学周时</th>
+          <th width="10%" bgcolor="#DCDCDC" scope="col">任课教师</th>
+          <th width="12%" bgcolor="#DCDCDC" scope="col">选量</th>
+          <th width="9%" bgcolor="#DCDCDC" scope="col">余量</th>
+          <th width="9%" bgcolor="#DCDCDC" scope="col">退选</th>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td height="18" bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td height="16" bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+          <td bgcolor="#DCDCDC">&nbsp;</td>
+        </tr>
+      </table>
+      <table width="100%" height="142" border="0">
+        <tr>
+          <th height="138" align="center" valign="middle" scope="col"><table width="50%" height="83" border="0" class="边框color">
+            <tr>
+              <td width="49%" align="center" bgcolor="#DCDCDC">已选学生人数：</td>
+              <td width="51%" align="center" valign="middle" bgcolor="#D6D6D6">0</td>
+            </tr>
+            <tr>
+              <td align="center" bgcolor="#D6D6D6">未选学生人数：</td>
+              <td align="center" valign="middle" bgcolor="#D6D6D6">0</td>
+            </tr>
+          </table></th>
+        </tr>
+</table>
+      <p>&nbsp;</p>
+    <p>&nbsp;</p></th>
+  </tr>
+</table>
+
+</body>
+</html>

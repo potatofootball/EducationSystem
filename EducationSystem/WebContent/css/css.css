@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* css基本样式设置*/
+*{
+	margin:0px;
+	<!-- 删掉设置boder-->
+	padding:0px;}
+.字体 {
+	font-size: 18px;
+}
+
+	
+body{
+	font-family: "宋体";
+	font-size: 14px;
+	background-image: url(../../%E6%95%99%E5%8A%A1%E7%95%8C%E9%9D%A2/images/jw_background.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+	
