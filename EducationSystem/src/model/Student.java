@@ -7,21 +7,42 @@ public class Student {
 
 	private int number;
 	private String name;
-	private Class student;
+	private String password;
+	private Class theClass;
 	private String gender;
 	private Long birthday;
 	private boolean pickCoursePower;
+	private List<PickCourse> pickCourseList = new ArrayList<PickCourse>();
 
 	private static List<Student> studentList = new ArrayList<Student>();
 
-	public Student(int number, String name, Class student, String gender, Long birthday, boolean pickCoursePower) {
+	public Student(int number, String name, String password, Class theClass, String gender, Long birthday,
+			boolean pickCoursePower) {
 		this.number = number;
 		this.name = name;
-		this.student = student;
+		this.password = password;
+		this.theClass = theClass;
 		this.gender = gender;
 		this.birthday = birthday;
 		this.pickCoursePower = pickCoursePower;
 		studentList.add(this);
+		this.getTheClass().getStudentList().add(this);
+	}
+
+	public Student(int number, String name, String password, int theClass, String gender, Long birthday, int pickCoursePower) {
+		this.number = number;
+		this.name = name;
+		this.password = password;
+		this.theClass = Class.searchClass(theClass);
+		this.gender = gender;
+		this.birthday = birthday;
+		if (pickCoursePower == 0) {
+			this.pickCoursePower = true;
+		} else {
+			this.pickCoursePower = false;
+		}
+		studentList.add(this);
+		this.getTheClass().getStudentList().add(this);
 	}
 
 	public int getNumber() {
@@ -40,12 +61,20 @@ public class Student {
 		this.name = name;
 	}
 
-	public Class getstudent() {
-		return student;
+	public String getPassword() {
+		return password;
 	}
 
-	public void setstudent(Class student) {
-		this.student = student;
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public Class getTheClass() {
+		return theClass;
+	}
+
+	public void setTheClass(Class theClass) {
+		this.theClass = theClass;
 	}
 
 	public String getGender() {
@@ -70,6 +99,14 @@ public class Student {
 
 	public void setPickCoursePower(boolean pickCoursePower) {
 		this.pickCoursePower = pickCoursePower;
+	}
+	
+	public List<PickCourse> getPickCourseList() {
+		return pickCourseList;
+	}
+	
+	public void addPickCourse(PickCourse p) {
+		pickCourseList.add(p);
 	}
 
 	public static List<Student> getStudentList() {
@@ -125,4 +162,6 @@ public class Student {
 			return false;
 		return true;
 	}
+	
+	
 }

@@ -8,6 +8,7 @@ public class Course {
 	private int number;
 	private String name;
 	private CourseType courseType;
+	private List<Teach> teachList = new ArrayList<Teach>();
 
 	private static List<Course> courseList = new ArrayList<Course>();
 
@@ -15,6 +16,7 @@ public class Course {
 		this.number = number;
 		this.name = name;
 		this.courseType = CourseType.searchCourseType(courseType);
+		this.courseType.addCourse(this);
 		courseList.add(this);
 	}
 
@@ -40,6 +42,14 @@ public class Course {
 
 	public void setCourseType(CourseType courseType) {
 		this.courseType = courseType;
+	}
+
+	public List<Teach> getTeachList() {
+		return teachList;
+	}
+
+	public void addTeach(Teach teach) {
+		teachList.add(teach);
 	}
 
 	public static List<Course> getCourseList() {

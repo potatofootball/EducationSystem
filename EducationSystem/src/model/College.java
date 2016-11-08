@@ -7,6 +7,7 @@ public class College {
 
 	private int number;
 	private String name;
+	private List<Profession> professionList = new ArrayList<Profession>();
 
 	private static List<College> collegeList = new ArrayList<College>();
 
@@ -32,7 +33,15 @@ public class College {
 		this.name = name;
 	}
 
-	public List<College> getCollegeList() {
+	public List<Profession> getProfessionList() {
+		return professionList;
+	}
+	
+	public void addProfession(Profession profession) {
+		professionList.add(profession);
+	}
+
+	public static List<College> getCollegeList() {
 		return collegeList;
 	}
 	

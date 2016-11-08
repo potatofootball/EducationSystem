@@ -7,22 +7,32 @@ public class Teacher {
 
 	private int number;
 	private String name;
+	private String password;
 	private String gender;
 	private Long birthday;
 	private Profession profession;
 	private College college;
 	private Title title;
+	private boolean isJiaoWu;
+	private List<Teach> teachList = new ArrayList<Teach>();
 
 	private static List<Teacher> teacherList = new ArrayList<Teacher>();
 
-	public Teacher(int number, String name, String gender, Long birthday, int profession, int college, int title) {
+	public Teacher(int number, String name, String password, String gender, Long birthday, int college, int profession,
+			int title, int isJiaoWu) {
 		this.number = number;
 		this.name = name;
+		this.password = password;
 		this.gender = gender;
 		this.birthday = birthday;
 		this.profession = Profession.searchProfession(profession);
 		this.college = College.searchCollege(college);
 		this.title = Title.searchTitle(title);
+		if (isJiaoWu == 0) {
+			this.isJiaoWu = true;
+		} else {
+			this.isJiaoWu = false;
+		}
 		teacherList.add(this);
 	}
 
@@ -40,6 +50,14 @@ public class Teacher {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
 	}
 
 	public String getGender() {
@@ -80,6 +98,18 @@ public class Teacher {
 
 	public void setTitle(Title title) {
 		this.title = title;
+	}
+
+	public boolean isJiaoWu() {
+		return isJiaoWu;
+	}
+
+	public void setJiaoWu(boolean isJiaoWu) {
+		this.isJiaoWu = isJiaoWu;
+	}
+
+	public List<Teach> getTeachList() {
+		return teachList;
 	}
 
 	public static List<Teacher> getTeacherList() {

@@ -42,7 +42,7 @@ public class NotAllowCourse {
 		this.course = course;
 	}
 
-	public List<NotAllowCourse> getNotAllowCourseList() {
+	public static List<NotAllowCourse> getNotAllowCourseList() {
 		return notAllowCourseList;
 	}
 

@@ -12,7 +12,7 @@ import model.College;
 public class CollegeDao {
 
 	// 增加学院
-	public static void addCollege(College college) {
+	public static boolean addCollege(College college) {
 		Connection conn = DBUtil.getConnection();
 		try {
 			String sql = "insert into college (number, name) values (?, ?)";
@@ -20,15 +20,16 @@ public class CollegeDao {
 			ptmt.setInt(1, college.getNumber());
 			ptmt.setString(2, college.getName());
 			ptmt.execute();
+			return true;
 		} catch (SQLException e) {
 			e.printStackTrace();
 			System.out.println("增加学院失败");
-			college = null;
+			return false;
 		}
 	}
 
 	// 修改学院信息
-	public static void updateCollege(College college) {
+	public static boolean updateCollege(College college) {
 		Connection conn = DBUtil.getConnection();
 		String sql = "update college set name = ? where number = ?";
 		try {
@@ -36,26 +37,30 @@ public class CollegeDao {
 			ptmt.setString(1, college.getName());
 			ptmt.setInt(2, college.getNumber());
 			ptmt.execute();
+			return true;
 		} catch (SQLException e) {
 			e.printStackTrace();
 			System.out.println("修改学院信息失败");
+			return false;
 		}
 	}
 
-	public static void delCollege(Integer number) {
+	public static boolean delCollege(College college) {
 		Connection conn = DBUtil.getConnection();
 		String sql = "delete from college where number = ?";
 		try {
 			PreparedStatement ptmt = conn.prepareStatement(sql);
-			ptmt.setInt(1, number);
+			ptmt.setInt(1, college.getNumber());
 			ptmt.execute();
+			return true;
 		} catch (SQLException e) {
 			e.printStackTrace();
 			System.out.println("删除学院信息失败");
+			return false;
 		}
 	}
 
-	public static void loadCollege() {
+	public static boolean loadCollege() {
 		Connection conn = DBUtil.getConnection();
 		String sql = "select * from college";
 		try {
@@ -64,9 +69,11 @@ public class CollegeDao {
 			while (rs.next()) {
 				new College(rs.getInt("number"), rs.getString("name"));
 			}
+			return true;
 		} catch (SQLException e) {
 			e.printStackTrace();
 			System.out.println("学院信息加载失败");
+			return false;
 		}
 	}
 

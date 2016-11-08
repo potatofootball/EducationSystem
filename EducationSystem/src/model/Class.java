@@ -8,13 +8,17 @@ public class Class {
 	private int number;
 	private String name;
 	private Profession profession;
+	private int year;
 
 	private static List<Class> classList = new ArrayList<Class>();
+	private List<Student> studentList = new ArrayList<Student>();
 
-	public Class(int number, String name, int profession) {
+	public Class(int number, String name, int profession, int year) {
 		this.number = number;
 		this.name = name;
 		this.profession = Profession.searchProfession(profession);
+		this.year = year;
+		classList.add(this);
 	}
 
 	public int getNumber() {
@@ -41,8 +45,20 @@ public class Class {
 		this.profession = profession;
 	}
 
+	public int getYear() {
+		return year;
+	}
+
+	public void setYear(int year) {
+		this.year = year;
+	}
+
 	public static List<Class> getClassList() {
 		return classList;
+	}
+
+	public List<Student> getStudentList() {
+		return studentList;
 	}
 
 	// 删除班级

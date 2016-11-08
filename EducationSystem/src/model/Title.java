@@ -32,7 +32,7 @@ public class Title {
 		this.name = name;
 	}
 
-	public List<Title> getTitleList() {
+	public static List<Title> getTitleList() {
 		return titleList;
 	}
 

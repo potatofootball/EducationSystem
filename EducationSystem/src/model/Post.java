@@ -13,6 +13,7 @@ public class Post {
 	public Post(int number, String name) {
 		this.number = number;
 		this.name = name;
+		postList.add(this);
 	}
 
 	public int getNumber() {
@@ -31,7 +32,7 @@ public class Post {
 		this.name = name;
 	}
 
-	public List<Post> getPostList() {
+	public static List<Post> getPostList() {
 		return postList;
 	}
 

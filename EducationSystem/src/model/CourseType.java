@@ -7,12 +7,19 @@ public class CourseType {
 
 	private int number;
 	private String name;
+	private boolean isPickCourse;
+	private List<Course> CourseList = new ArrayList<Course>();
 
 	private static List<CourseType> courseTypeList = new ArrayList<CourseType>();
 
-	public CourseType(int number, String name) {
+	public CourseType(int number, String name, int isPickCourse) {
 		this.number = number;
 		this.name = name;
+		if (isPickCourse == 0) {
+			this.isPickCourse = true;
+		} else {
+			this.isPickCourse = false;
+		}
 		courseTypeList.add(this);
 	}
 
@@ -32,7 +39,23 @@ public class CourseType {
 		this.name = name;
 	}
 
-	public List<CourseType> getCourseTypeList() {
+	public boolean isPickCourse() {
+		return isPickCourse;
+	}
+
+	public void setPickCourse(boolean isPickCourse) {
+		this.isPickCourse = isPickCourse;
+	}
+
+	public List<Course> getCourseList() {
+		return CourseList;
+	}
+
+	public void addCourse(Course course) {
+		CourseList.add(course);
+	}
+
+	public static List<CourseType> getCourseTypeList() {
 		return courseTypeList;
 	}
 

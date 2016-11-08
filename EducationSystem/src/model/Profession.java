@@ -16,6 +16,7 @@ public class Profession {
 		this.name = name;
 		this.college = College.searchCollege(college);
 		professionList.add(this);
+		this.college.addProfession(this);
 	}
 
 	public int getNumber() {
